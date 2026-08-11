@@ -8397,6 +8397,16 @@
 		)
 		(uuid "3fb55b9e-7318-41a0-8a49-78011adc082f")
 	)
+	(label "VREG_PGND"
+		(at 57.15 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41fe16f2-0874-40d1-8609-dff2e17d003d")
+	)
 	(label "GPIO22"
 		(at 176.53 113.03 180)
 		(effects
@@ -8416,16 +8426,6 @@
 			(justify right bottom)
 		)
 		(uuid "443f4827-4f55-4eb2-9e05-57d24f96ae53")
-	)
-	(label "VREG_VIN"
-		(at 138.43 45.72 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "44e0d2bb-f2ba-4165-9329-fc56afc77836")
 	)
 	(label "GPIO21"
 		(at 176.53 110.49 180)
@@ -8497,16 +8497,6 @@
 		)
 		(uuid "541bd408-7f8d-4934-8872-5b6323b9eddd")
 	)
-	(label "VREG_LX"
-		(at 140.97 45.72 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5612ae19-4594-42bd-b107-2e7b03a2001c")
-	)
 	(label "SWITCH"
 		(at 21.59 170.18 0)
 		(effects
@@ -8527,16 +8517,6 @@
 		)
 		(uuid "56e5662a-ea0d-4977-8a77-cda53545728a")
 	)
-	(label "VREG_FB"
-		(at 143.51 45.72 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5bbf4b6f-4896-45fb-be47-79b880cc67c1")
-	)
 	(label "USB_D+"
 		(at 224.79 52.07 180)
 		(effects
@@ -8555,7 +8535,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5fbf2163-5b60-4f7d-8b66-4c6e6f85dd0f")
+		(uuid "63d588ef-9891-41cd-b941-194b86f676f6")
 	)
 	(label "nRST"
 		(at 105.41 72.39 0)
@@ -8616,16 +8596,6 @@
 			(justify left bottom)
 		)
 		(uuid "88145a4e-5b35-42f4-9fdb-42b4fb13fbd5")
-	)
-	(label "VREG_PGND"
-		(at 57.15 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c906d5c-9c79-4718-8c0f-ccc6e6d3deda")
 	)
 	(label "GPIO7"
 		(at 176.53 74.93 180)
@@ -8706,6 +8676,16 @@
 			(justify right bottom)
 		)
 		(uuid "b21b99e0-1f07-437e-b2de-f1bd2d7c9030")
+	)
+	(label "VREG_FB"
+		(at 143.51 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4a372e4-61ee-407e-8e54-8471628a10c3")
 	)
 	(label "VREG_PGND"
 		(at 129.54 143.51 180)
@@ -8816,6 +8796,26 @@
 			(justify right bottom)
 		)
 		(uuid "e639d69c-8527-4608-9327-aeefb1831fe4")
+	)
+	(label "VREG_LX"
+		(at 140.97 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eacf3de5-b882-4d2c-bbdf-5e8ecc2e3a13")
+	)
+	(label "VREG_VIN"
+		(at 138.43 45.72 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecc3bd4f-1e17-4eff-9bf6-716d967f69f6")
 	)
 	(label "XIN"
 		(at 276.86 77.47 180)
