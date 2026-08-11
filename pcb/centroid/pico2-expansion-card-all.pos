@@ -1,0 +1,54 @@
+### Footprint positions - created on 2026-08-12T01:58:00 ###
+### Printed by KiCad version 10.0.1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                Package                                                    PosX       PosY       Rot  Side
+C1        4.7u               C_0402_1005Metric_small_pads                           152.9200  -128.3500    0.0000  top
+C2        10u                C_0805_2012Metric                                      158.1700  -125.5500   90.0000  top
+C3        4.7u               C_0402_1005Metric_small_pads                           152.9200  -127.2500    0.0000  top
+C5        4.7u               C_0402_1005Metric                                      154.4200  -127.7500   90.0000  top
+C6        4u7                C_0402_1005Metric                                      146.3000  -144.7000    0.0000  top
+C8        100n               C_0402_1005Metric                                      155.9200  -129.4500  180.0000  top
+C9        100n               C_0402_1005Metric                                      156.0200  -131.5500   90.0000  top
+C10       100n               C_0402_1005Metric                                      154.5200  -135.2500   90.0000  top
+C11       100n               C_0402_1005Metric                                      157.1200  -131.5500   90.0000  top
+C12       100n               C_0402_1005Metric                                      158.2200  -131.5500   90.0000  top
+C13       100n               C_0402_1005Metric                                      144.8200  -130.6500  -90.0000  top
+C14       100n               C_0402_1005Metric                                      144.2200  -135.1500    0.0000  top
+C15       15p                C_0402_1005Metric                                      140.0200  -132.4000  180.0000  top
+C16       15p                C_0402_1005Metric                                      138.7700  -137.1000    0.0000  top
+C17       100n               C_0402_1005Metric                                      144.3200  -133.1500  180.0000  top
+C18       100n               C_0402_1005Metric                                      155.6200  -135.2500   90.0000  top
+C19       10u                C_0805_2012Metric                                      141.1200  -121.0500  180.0000  top
+C20       4.7u               C_0402_1005Metric                                      149.9200  -139.0500  -90.0000  top
+C21       10u                C_0805_2012Metric                                      143.9200  -126.9500  -90.0000  top
+C22       100n               C_0402_1005Metric                                      155.1200  -133.7500    0.0000  top
+C23       100n               C_0402_1005Metric                                      147.5200  -138.5500    0.0000  top
+C24       4u7                C_0402_1005Metric                                      146.3000  -143.6000    0.0000  top
+J3        Conn_01x03_Socket  JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal       151.0300  -144.5050    0.0000  top
+J4        Conn_01x04_Socket  JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal       158.5700  -144.5050    0.0000  top
+L1        3.3u               IND-SMD_L2.0-W1.6_AOTA-B201610S3R3-101-T               152.9200  -125.5500    0.0000  top
+P1        ~                  USB-C-SMD_TYPE-C-31-G-10                               149.7699  -120.5934  180.0000  top
+Q1        EM6K6              SOT-563                                                138.5200  -141.4625   90.0000  top
+Q2        EM6K6              SOT-563                                                142.8200  -141.8625  -90.0000  top
+R1        33                 R_0402_1005Metric                                      155.4200  -127.7500   90.0000  top
+R2        27                 R_0402_1005Metric                                      149.5200  -126.1500  -90.0000  top
+R3        27                 R_0402_1005Metric                                      150.5200  -126.1500  -90.0000  top
+R4        5.1k               R_0402_1005Metric                                      148.2700  -126.1500  -90.0000  top
+R5        5K1                R_0402_1005Metric                                      140.5200  -138.9500   90.0000  top
+R7        5K1                R_0402_1005Metric                                      138.5200  -139.4500  180.0000  top
+R8        1k                 R_0402_1005Metric                                      147.1200  -140.0000  180.0000  top
+R11       51K                R_0402_1005Metric                                      146.3200  -147.0500  180.0000  top
+R12       5K1                R_0402_1005Metric                                      145.2200  -142.0500  -90.0000  top
+R13       51K                R_0402_1005Metric                                      144.5200  -144.2600  -90.0000  top
+R14       51K                R_0402_1005Metric                                      146.3200  -145.9500    0.0000  top
+R15       1K                 R_0402_1005Metric                                      145.2300  -129.1500  180.0000  top
+SW1       SW_Push            BUTTON-SW-SMD_2P-TS24CA                                140.1450  -145.9050  180.0000  top
+TP1       TestPoint          TestPoint_Pad_D1.0mm                                   157.3200  -119.8500   90.0000  top
+TP2       TestPoint          TestPoint_Pad_D1.0mm                                   160.2200  -119.8500   90.0000  top
+TP3       TestPoint          TestPoint_Pad_D1.0mm                                   157.3200  -122.1500   90.0000  top
+TP4       TestPoint          TestPoint_Pad_D1.0mm                                   160.2200  -122.1500   90.0000  top
+U2        RP2354A            RP2350-QFN-60-1EP_7x7_P0.4mm_EP3.4x3.4mm_ThermalVias   149.7075  -133.9000    0.0000  top
+U4        AP2127K-3.3        SOT-23-5                                               141.1200  -124.4500  -90.0000  top
+Y1        ABM8-272-T3        Crystal_SMD_3225-4Pin_3.2x2.5mm                        139.3700  -134.6500  180.0000  top
+## End
