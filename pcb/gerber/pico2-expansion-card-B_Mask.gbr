@@ -1,0 +1,21 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.1*%
+%TF.CreationDate,2026-08-11T19:25:47+02:00*%
+%TF.ProjectId,pico2-expansion-card,7069636f-322d-4657-9870-616e73696f6e,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.1) date 2026-08-11 19:25:47*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.700000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,SW1*%
+X160475100Y-99150000D03*
+X158775100Y-99150000D03*
+%TD*%
+M02*
