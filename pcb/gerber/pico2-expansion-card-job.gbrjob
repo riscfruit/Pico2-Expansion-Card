@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "10.0.1"
     },
-    "CreationDate": "2026-08-12T02:55:11+02:00"
+    "CreationDate": "2026-08-12T20:21:40+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "pico2-expansion-card",
       "GUID": "7069636f-322d-4657-9870-616e73696f6e",
-      "Revision": "rev?"
+      "Revision": "v0.1.0p"
     },
     "Size": {
       "X": 26.254,
-      "Y": 31.1155
+      "Y": 30.8405
     },
     "LayerNumber": 2,
     "BoardThickness": 1.66,
