@@ -4499,7 +4499,7 @@
 	)
 	(text "UART"
 		(exclude_from_sim no)
-		(at 234.95 135.382 0)
+		(at 234.95 132.842 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4787,6 +4787,12 @@
 		(uuid "897041fc-c5bf-4758-b791-5f42008ec418")
 	)
 	(junction
+		(at 220.98 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96dc608c-6de5-4d3a-81ee-78bb7e8b94da")
+	)
+	(junction
 		(at 140.97 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4871,10 +4877,22 @@
 		(uuid "e0e4e893-4489-4ba0-b258-3955d1cbae45")
 	)
 	(junction
+		(at 224.79 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1ff8cae-8cb3-435a-9a69-828c7deb545d")
+	)
+	(junction
 		(at 248.92 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5acf629-17bc-4530-9e2b-238ce456a573")
+	)
+	(junction
+		(at 228.6 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e802e8f5-06dc-4b56-8551-4092228bfa39")
 	)
 	(junction
 		(at 215.9 46.99)
@@ -5472,7 +5490,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 144.78) (xy 237.49 144.78)
+			(xy 222.25 142.24) (xy 237.49 142.24)
 		)
 		(stroke
 			(width 0)
@@ -5532,6 +5550,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 149.86) (xy 220.98 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f44a6b9-003a-4c12-a3f7-2e1d50a6df7e")
+	)
+	(wire
+		(pts
 			(xy 78.105 181.61) (xy 78.105 182.245)
 		)
 		(stroke
@@ -5582,7 +5610,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 147.32) (xy 237.49 147.32)
+			(xy 215.9 144.78) (xy 237.49 144.78)
 		)
 		(stroke
 			(width 0)
@@ -5972,6 +6000,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 157.48) (xy 228.6 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d8575fd-3226-44d1-8673-85e987bce12e")
+	)
+	(wire
+		(pts
 			(xy 46.355 163.83) (xy 36.83 163.83)
 		)
 		(stroke
@@ -6092,7 +6130,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 142.24) (xy 237.49 142.24)
+			(xy 228.6 139.7) (xy 237.49 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6159,6 +6197,16 @@
 			(type default)
 		)
 		(uuid "70866bbc-1baa-48d3-81e1-4a8399b73577")
+	)
+	(wire
+		(pts
+			(xy 220.98 157.48) (xy 224.79 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71685bbc-c22e-47c3-b95a-616c16c8d3e9")
 	)
 	(wire
 		(pts
@@ -6732,6 +6780,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 158.75) (xy 224.79 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abd0b3d7-7cc6-4dc2-9c8e-1ab8e9a25eaf")
+	)
+	(wire
+		(pts
 			(xy 153.67 113.03) (xy 168.91 113.03)
 		)
 		(stroke
@@ -6829,6 +6887,16 @@
 			(type default)
 		)
 		(uuid "b7d0dcdf-bcd9-411b-922c-755665b312cb")
+	)
+	(wire
+		(pts
+			(xy 228.6 147.32) (xy 228.6 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8a23e96-72b1-4030-b501-d5e62c2d16da")
 	)
 	(wire
 		(pts
@@ -7142,7 +7210,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 149.86) (xy 237.49 149.86)
+			(xy 215.9 147.32) (xy 237.49 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7252,7 +7320,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 140.97) (xy 228.6 142.24)
+			(xy 228.6 138.43) (xy 228.6 139.7)
 		)
 		(stroke
 			(width 0)
@@ -7272,7 +7340,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 140.97) (xy 222.25 144.78)
+			(xy 222.25 138.43) (xy 222.25 142.24)
 		)
 		(stroke
 			(width 0)
@@ -8583,7 +8651,7 @@
 		(uuid "a7e2b791-5f81-4514-b7e1-fa417d1da132")
 	)
 	(label "GPIO17{slash}RX"
-		(at 215.9 149.86 180)
+		(at 215.9 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8593,7 +8661,7 @@
 		(uuid "a91bb033-e7ee-4c58-9207-693e004bedb8")
 	)
 	(label "GPIO16{slash}TX"
-		(at 215.9 147.32 180)
+		(at 215.9 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10680,6 +10748,83 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 224.79 158.75 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4663c8ac-fa14-49fa-bb28-157c5f6f496f")
+		(property "Reference" "#PWR033"
+			(at 224.79 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 225.044 163.068 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 224.79 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a29c682-65e1-401c-89ac-164dad5d8d93")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -14254,7 +14399,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 222.25 140.97 0)
+		(at 222.25 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14264,7 +14409,7 @@
 		(dnp no)
 		(uuid "baeb3783-fd20-4705-8c5e-be1a6887a63a")
 		(property "Reference" "#PWR014"
-			(at 222.25 144.78 0)
+			(at 222.25 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14275,7 +14420,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 221.996 136.652 0)
+			(at 221.996 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14285,7 +14430,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 140.97 0)
+			(at 222.25 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14296,7 +14441,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 140.97 0)
+			(at 222.25 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14307,7 +14452,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 222.25 140.97 0)
+			(at 222.25 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14324,6 +14469,84 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 220.98 153.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc302fd5-94ba-4529-bb2b-44507ecd5f77")
+		(property "Reference" "R10"
+			(at 226.2378 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 223.9264 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 222.758 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "368acde2-f360-4aae-8b53-c10e55d6160a")
+		)
+		(pin "2"
+			(uuid "2808c9f7-dc0d-47d0-b480-40b59ba29541")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -16140,7 +16363,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 242.57 144.78 0)
+		(at 242.57 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16151,7 +16374,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee35fe08-a951-4444-9df4-f3ebca10b758")
 		(property "Reference" "J3"
-			(at 243.84 144.7799 0)
+			(at 243.84 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16162,7 +16385,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Socket"
-			(at 243.84 147.3199 0)
+			(at 243.84 144.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16173,7 +16396,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 242.57 144.78 0)
+			(at 242.57 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16184,7 +16407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 144.78 0)
+			(at 242.57 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16195,7 +16418,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 242.57 144.78 0)
+			(at 242.57 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16880,6 +17103,84 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 228.6 153.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fd16a8d2-231a-4ebe-8750-be3e4469586a")
+		(property "Reference" "R16"
+			(at 233.8578 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 231.5464 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 230.378 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8772b8f5-dc4b-4f1c-8fdd-d24d54ac42cb")
+		)
+		(pin "2"
+			(uuid "6c464bdb-46f8-420a-9ac4-85967280111c")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 78.105 186.055 0)
 		(unit 1)
 		(body_style 1)
@@ -17016,7 +17317,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 140.97 180)
+		(at 228.6 138.43 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17026,7 +17327,7 @@
 		(dnp no)
 		(uuid "ff235ae0-e2fe-4b7e-aa2e-0679475e8912")
 		(property "Reference" "#PWR030"
-			(at 228.6 134.62 0)
+			(at 228.6 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17037,7 +17338,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 136.652 0)
+			(at 228.6 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17047,7 +17348,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 140.97 0)
+			(at 228.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17058,7 +17359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 140.97 0)
+			(at 228.6 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17069,7 +17370,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 140.97 0)
+			(at 228.6 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
