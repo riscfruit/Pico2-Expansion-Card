@@ -4497,9 +4497,9 @@
 		)
 		(uuid "8efd00a4-e1d3-49a8-858d-78007496187d")
 	)
-	(text "UART"
+	(text "I2C0/UART0"
 		(exclude_from_sim no)
-		(at 234.95 132.842 0)
+		(at 236.474 134.366 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4519,9 +4519,9 @@
 		)
 		(uuid "cd12a1fb-f631-413b-8b94-4439f95cdd28")
 	)
-	(text "I2C/ADC"
+	(text "I2C1/ADC"
 		(exclude_from_sim no)
-		(at 234.442 98.044 0)
+		(at 235.966 99.568 0)
 		(effects
 			(font
 				(size 2.54 2.54)
