@@ -252,7 +252,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "v0.1.2"
+      "sch_revision": "0.3.0p"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -725,7 +725,7 @@
         "uuid": "298f0c21-f8de-4062-a465-7d71ba12f866"
       }
     ],
-    "used_designators": "U1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
