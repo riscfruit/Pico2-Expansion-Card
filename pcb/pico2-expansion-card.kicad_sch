@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Pico2 Expansion Card")
-		(date "2026-03-29")
-		(rev "0.3.0p")
+		(date "2026-09-08")
+		(rev "0.4.0p")
 		(company "Riscfruit Laboratory")
 		(comment 1 "License: CERN-OHL-S")
 		(comment 2 "Author: Tan Siret Akıncı")
@@ -1355,6 +1355,207 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4820,9 +5021,20 @@
 		)
 		(uuid "116c02b3-dd56-41dc-8be0-53dc6e579fcd")
 	)
+	(text "LED Indicators"
+		(exclude_from_sim no)
+		(at 199.644 82.55 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "2066ed58-dde3-41ca-b345-1e9bff7d9712")
+	)
 	(text "USB-C Plug"
 		(exclude_from_sim no)
-		(at 184.912 28.194 0)
+		(at 184.912 20.574 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4844,7 +5056,7 @@
 	)
 	(text "12MHz Crystal"
 		(exclude_from_sim no)
-		(at 234.95 87.884 0)
+		(at 29.21 70.104 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4877,7 +5089,7 @@
 	)
 	(text "5V to 3.3V 600mA"
 		(exclude_from_sim no)
-		(at 242.062 37.846 0)
+		(at 242.062 30.226 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4886,9 +5098,9 @@
 		)
 		(uuid "8efd00a4-e1d3-49a8-858d-78007496187d")
 	)
-	(text "I2C0/UART0"
+	(text "I2C0/UART0\n\"TREX\""
 		(exclude_from_sim no)
-		(at 248.158 120.142 0)
+		(at 247.65 128.778 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4910,7 +5122,7 @@
 	)
 	(text "SWD"
 		(exclude_from_sim no)
-		(at 200.406 119.888 0)
+		(at 200.406 124.968 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -4942,7 +5154,7 @@
 		(uuid "e86586b1-a6e0-498a-86e6-8214da111790")
 	)
 	(junction
-		(at 231.14 46.99)
+		(at 231.14 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05b98df7-85c9-4cef-8128-c542b39b6882")
@@ -4954,7 +5166,7 @@
 		(uuid "086d748a-dabd-42c9-8363-c107003bd486")
 	)
 	(junction
-		(at 213.36 39.37)
+		(at 213.36 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0cb950d9-71b3-4fe3-bbbf-ce07b81bfe48")
@@ -4966,7 +5178,7 @@
 		(uuid "0d14cd08-be6f-4129-a24c-68dfe2b8c604")
 	)
 	(junction
-		(at 259.08 58.42)
+		(at 259.08 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1303649f-9c6e-4357-98ff-974a753f90c1")
@@ -4984,13 +5196,13 @@
 		(uuid "1ab1ae8c-d737-4acc-bc62-ebf8c411f6e8")
 	)
 	(junction
-		(at 241.3 46.99)
+		(at 241.3 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "271b2054-a55e-490d-b57e-31ae0a9da388")
 	)
 	(junction
-		(at 246.38 46.99)
+		(at 246.38 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "296eb68c-03d3-4cdc-b207-e7688723679e")
@@ -5002,7 +5214,7 @@
 		(uuid "2a401b6a-f96c-4176-8ef0-e82dad5cd8b4")
 	)
 	(junction
-		(at 223.52 81.28)
+		(at 17.78 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c7789cd-77ef-4777-9340-571d6ddc3043")
@@ -5032,7 +5244,7 @@
 		(uuid "43ac8a32-59d1-40ad-842d-9f9760bf3bba")
 	)
 	(junction
-		(at 245.11 81.28)
+		(at 39.37 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "475505bc-66a7-4e76-9e83-5473c45d0a2b")
@@ -5044,7 +5256,7 @@
 		(uuid "4822875d-f0ac-4bd8-aced-b1ca2fcfafb6")
 	)
 	(junction
-		(at 276.86 46.99)
+		(at 276.86 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4bc12d54-6274-4443-bdb5-fa1d244f48e1")
@@ -5098,13 +5310,13 @@
 		(uuid "62f633ca-373c-4e53-bd38-5affb35f61d1")
 	)
 	(junction
-		(at 276.86 58.42)
+		(at 276.86 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65c9b694-847f-476a-89a6-b9c2f2a57282")
 	)
 	(junction
-		(at 245.11 71.12)
+		(at 39.37 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6bc9d574-633d-470d-b23f-5e443745bd01")
@@ -5128,7 +5340,7 @@
 		(uuid "70932d48-2b36-41b2-9224-a10ad4edfa62")
 	)
 	(junction
-		(at 196.85 130.81)
+		(at 196.85 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78174fc6-a3d1-477d-b59a-309d194edd5a")
@@ -5170,7 +5382,7 @@
 		(uuid "897041fc-c5bf-4758-b791-5f42008ec418")
 	)
 	(junction
-		(at 251.46 138.43)
+		(at 251.46 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96dc608c-6de5-4d3a-81ee-78bb7e8b94da")
@@ -5188,7 +5400,7 @@
 		(uuid "a54d1cc4-e635-49b8-8bc5-41da2cded0de")
 	)
 	(junction
-		(at 269.24 58.42)
+		(at 269.24 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a7913789-51c2-414d-a514-c72808b8ff6f")
@@ -5242,7 +5454,7 @@
 		(uuid "dca52551-f8cc-4408-bd02-ddc61bb3aa99")
 	)
 	(junction
-		(at 228.6 142.24)
+		(at 228.6 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e04703c1-9369-4f10-90f4-122f4490e550")
@@ -5260,25 +5472,25 @@
 		(uuid "e0e4e893-4489-4ba0-b258-3955d1cbae45")
 	)
 	(junction
-		(at 255.27 151.13)
+		(at 255.27 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1ff8cae-8cb3-435a-9a69-828c7deb545d")
 	)
 	(junction
-		(at 248.92 46.99)
+		(at 248.92 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5acf629-17bc-4530-9e2b-238ce456a573")
 	)
 	(junction
-		(at 259.08 140.97)
+		(at 259.08 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e802e8f5-06dc-4b56-8551-4092228bfa39")
 	)
 	(junction
-		(at 215.9 46.99)
+		(at 215.9 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4e25b2e-6eee-4bd4-874e-dbf2a49f0f3b")
@@ -5302,7 +5514,7 @@
 		(uuid "11498489-696c-4ccd-bbb0-bcf7f0ec7931")
 	)
 	(no_connect
-		(at 212.09 57.15)
+		(at 212.09 49.53)
 		(uuid "1b64a9e7-12c7-4f61-a970-bece6cdff1eb")
 	)
 	(no_connect
@@ -5314,7 +5526,7 @@
 		(uuid "2587f124-754e-4913-a27d-ccdeef7cda32")
 	)
 	(no_connect
-		(at 181.61 67.31)
+		(at 181.61 59.69)
 		(uuid "263e9fc4-ce0f-400a-835f-03e44d10f434")
 	)
 	(no_connect
@@ -5346,7 +5558,7 @@
 		(uuid "6a5bed7c-c612-46c8-a518-d66b0a26914e")
 	)
 	(no_connect
-		(at 201.93 142.24)
+		(at 201.93 147.32)
 		(uuid "6ef88b04-775a-4f32-bdbd-c3c657c9deb8")
 	)
 	(no_connect
@@ -5390,7 +5602,7 @@
 		(uuid "be34ed16-8bc8-48a8-8dbc-9694db583e0c")
 	)
 	(no_connect
-		(at 212.09 64.77)
+		(at 212.09 57.15)
 		(uuid "c19d4eb6-8e3e-4a69-bb03-5190f47347da")
 	)
 	(no_connect
@@ -5410,7 +5622,7 @@
 		(uuid "da7de19b-5eed-4fff-8f9a-4c1c8683c3c4")
 	)
 	(no_connect
-		(at 212.09 67.31)
+		(at 212.09 59.69)
 		(uuid "daefa60e-a979-4ba9-8489-93858faae16a")
 	)
 	(no_connect
@@ -5418,7 +5630,7 @@
 		(uuid "df851526-4285-4455-85b7-a523343ddb6b")
 	)
 	(no_connect
-		(at 212.09 59.69)
+		(at 212.09 52.07)
 		(uuid "e976cd7a-a65c-492f-98ac-ba1959c62832")
 	)
 	(no_connect
@@ -5426,7 +5638,7 @@
 		(uuid "ea96acd2-4be3-4ba8-8909-74f1225b610c")
 	)
 	(no_connect
-		(at 212.09 62.23)
+		(at 212.09 54.61)
 		(uuid "f1930043-295a-427c-b712-c50260523caa")
 	)
 	(no_connect
@@ -5438,7 +5650,7 @@
 		(uuid "f378d3dd-68bc-43f5-98c3-6113522a063e")
 	)
 	(no_connect
-		(at 181.61 64.77)
+		(at 181.61 57.15)
 		(uuid "fe3e0226-230a-4832-af32-465f4113156d")
 	)
 	(wire
@@ -5463,6 +5675,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 90.17) (xy 215.9 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014bb828-f4df-46e8-8a5d-01d08ea7f8ac")
+	)
+	(wire
+		(pts
 			(xy 63.5 96.52) (xy 63.5 95.25)
 		)
 		(stroke
@@ -5470,6 +5692,16 @@
 			(type default)
 		)
 		(uuid "0170411b-d560-44da-b82f-7aec3d340f84")
+	)
+	(wire
+		(pts
+			(xy 191.77 90.17) (xy 194.31 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01f68479-1ee1-4e81-9f75-06c32165885b")
 	)
 	(wire
 		(pts
@@ -5503,7 +5735,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 49.53) (xy 236.22 49.53)
+			(xy 232.41 41.91) (xy 236.22 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5523,7 +5755,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 48.26) (xy 276.86 46.99)
+			(xy 276.86 40.64) (xy 276.86 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5613,7 +5845,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 48.26) (xy 241.3 46.99)
+			(xy 241.3 40.64) (xy 241.3 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5623,13 +5855,23 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 128.27) (xy 208.28 128.27)
+			(xy 185.42 133.35) (xy 208.28 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0c33197e-b3b2-48e9-a95f-12660b6bc821")
+	)
+	(wire
+		(pts
+			(xy 215.9 100.33) (xy 215.9 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2b1f20-4844-4215-9d5c-295bd5db1f3d")
 	)
 	(wire
 		(pts
@@ -5733,7 +5975,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 72.39) (xy 245.11 71.12)
+			(xy 39.37 54.61) (xy 39.37 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5753,7 +5995,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 81.28) (xy 223.52 83.82)
+			(xy 17.78 63.5) (xy 17.78 66.04)
 		)
 		(stroke
 			(width 0)
@@ -5763,7 +6005,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 62.23) (xy 181.61 62.23)
+			(xy 177.8 54.61) (xy 181.61 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5823,7 +6065,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 154.94) (xy 222.25 154.94)
+			(xy 217.17 160.02) (xy 222.25 160.02)
 		)
 		(stroke
 			(width 0)
@@ -5843,7 +6085,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 142.24) (xy 196.85 146.05)
+			(xy 196.85 147.32) (xy 196.85 151.13)
 		)
 		(stroke
 			(width 0)
@@ -5863,7 +6105,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 58.42) (xy 269.24 58.42)
+			(xy 259.08 50.8) (xy 269.24 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5893,7 +6135,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 135.89) (xy 267.97 135.89)
+			(xy 252.73 140.97) (xy 267.97 140.97)
 		)
 		(stroke
 			(width 0)
@@ -5903,7 +6145,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 58.42) (xy 276.86 59.69)
+			(xy 276.86 50.8) (xy 276.86 52.07)
 		)
 		(stroke
 			(width 0)
@@ -5913,7 +6155,17 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 76.2) (xy 240.03 76.2)
+			(xy 212.09 90.17) (xy 215.9 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "278dcc53-e5e7-42ee-8ac4-e708be3f85ad")
+	)
+	(wire
+		(pts
+			(xy 33.02 58.42) (xy 34.29 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5943,7 +6195,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 142.24) (xy 219.71 142.24)
+			(xy 228.6 147.32) (xy 219.71 147.32)
 		)
 		(stroke
 			(width 0)
@@ -5953,7 +6205,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 71.12) (xy 223.52 71.12)
+			(xy 20.32 53.34) (xy 17.78 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5963,7 +6215,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 143.51) (xy 251.46 138.43)
+			(xy 251.46 148.59) (xy 251.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5983,7 +6235,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 44.45) (xy 215.9 44.45)
+			(xy 212.09 36.83) (xy 215.9 36.83)
 		)
 		(stroke
 			(width 0)
@@ -6023,7 +6275,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 138.43) (xy 267.97 138.43)
+			(xy 246.38 143.51) (xy 267.97 143.51)
 		)
 		(stroke
 			(width 0)
@@ -6043,7 +6295,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 81.28) (xy 259.08 81.28)
+			(xy 39.37 63.5) (xy 53.34 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6073,7 +6325,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 123.19) (xy 186.69 123.19)
+			(xy 185.42 128.27) (xy 186.69 128.27)
 		)
 		(stroke
 			(width 0)
@@ -6133,6 +6385,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 100.33) (xy 204.47 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42a91023-2eba-4ce6-943e-47fa7f701ac4")
+	)
+	(wire
+		(pts
 			(xy 45.72 24.13) (xy 45.72 21.59)
 		)
 		(stroke
@@ -6143,7 +6405,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 49.53) (xy 248.92 46.99)
+			(xy 248.92 41.91) (xy 248.92 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6173,7 +6435,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 123.19) (xy 194.31 125.73)
+			(xy 194.31 128.27) (xy 194.31 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6213,7 +6475,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 58.42) (xy 276.86 58.42)
+			(xy 269.24 50.8) (xy 276.86 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6223,7 +6485,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 46.99) (xy 231.14 46.99)
+			(xy 212.09 39.37) (xy 231.14 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6303,6 +6565,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 100.33) (xy 215.9 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "517e9283-f1ab-4192-b03f-ee4b09996ffd")
+	)
+	(wire
+		(pts
 			(xy 36.83 162.56) (xy 36.83 163.83)
 		)
 		(stroke
@@ -6313,7 +6585,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 52.07) (xy 223.52 52.07)
+			(xy 212.09 44.45) (xy 223.52 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6323,7 +6595,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 46.99) (xy 276.86 46.99)
+			(xy 266.7 39.37) (xy 276.86 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6353,7 +6625,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 149.86) (xy 222.25 149.86)
+			(xy 219.71 154.94) (xy 222.25 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6393,7 +6665,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 46.99) (xy 246.38 46.99)
+			(xy 248.92 39.37) (xy 246.38 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6423,7 +6695,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 151.13) (xy 259.08 151.13)
+			(xy 255.27 156.21) (xy 259.08 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6493,7 +6765,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 41.91) (xy 213.36 41.91)
+			(xy 212.09 34.29) (xy 213.36 34.29)
 		)
 		(stroke
 			(width 0)
@@ -6503,7 +6775,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 142.24) (xy 204.47 142.24)
+			(xy 201.93 147.32) (xy 204.47 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6523,7 +6795,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 44.45) (xy 215.9 46.99)
+			(xy 215.9 36.83) (xy 215.9 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6533,7 +6805,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 38.1) (xy 217.17 39.37)
+			(xy 217.17 30.48) (xy 217.17 31.75)
 		)
 		(stroke
 			(width 0)
@@ -6553,7 +6825,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 62.23) (xy 59.69 63.5)
+			(xy 90.17 58.42) (xy 90.17 59.69)
 		)
 		(stroke
 			(width 0)
@@ -6563,7 +6835,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 133.35) (xy 267.97 133.35)
+			(xy 259.08 138.43) (xy 267.97 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6623,7 +6895,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 125.73) (xy 208.28 125.73)
+			(xy 194.31 130.81) (xy 208.28 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6633,7 +6905,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 151.13) (xy 255.27 151.13)
+			(xy 251.46 156.21) (xy 255.27 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6673,7 +6945,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 60.96) (xy 177.8 62.23)
+			(xy 177.8 53.34) (xy 177.8 54.61)
 		)
 		(stroke
 			(width 0)
@@ -6723,7 +6995,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 39.37) (xy 217.17 39.37)
+			(xy 213.36 31.75) (xy 217.17 31.75)
 		)
 		(stroke
 			(width 0)
@@ -6733,7 +7005,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 49.53) (xy 236.22 50.8)
+			(xy 236.22 41.91) (xy 236.22 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6743,7 +7015,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 45.72) (xy 231.14 46.99)
+			(xy 231.14 38.1) (xy 231.14 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6773,7 +7045,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 81.28) (xy 245.11 81.28)
+			(xy 27.94 63.5) (xy 39.37 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6833,7 +7105,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 133.35) (xy 186.69 133.35)
+			(xy 185.42 138.43) (xy 186.69 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6850,6 +7122,16 @@
 			(type default)
 		)
 		(uuid "83533a06-cc4e-44e2-a294-9caee31fc66a")
+	)
+	(wire
+		(pts
+			(xy 233.68 100.33) (xy 236.22 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83aa1e3b-6707-4536-bd09-d6410243cb72")
 	)
 	(wire
 		(pts
@@ -6893,7 +7175,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 49.53) (xy 227.33 49.53)
+			(xy 212.09 41.91) (xy 227.33 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6903,7 +7185,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 52.07) (xy 59.69 54.61)
+			(xy 90.17 48.26) (xy 90.17 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6923,7 +7205,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 58.42) (xy 241.3 58.42)
+			(xy 259.08 50.8) (xy 241.3 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6943,7 +7225,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 130.81) (xy 196.85 134.62)
+			(xy 196.85 135.89) (xy 196.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -6953,7 +7235,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 130.81) (xy 194.31 133.35)
+			(xy 194.31 135.89) (xy 194.31 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6983,7 +7265,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 151.13) (xy 228.6 152.4)
+			(xy 228.6 156.21) (xy 228.6 157.48)
 		)
 		(stroke
 			(width 0)
@@ -7023,7 +7305,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 54.61) (xy 223.52 54.61)
+			(xy 212.09 46.99) (xy 223.52 46.99)
 		)
 		(stroke
 			(width 0)
@@ -7033,7 +7315,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 149.86) (xy 222.25 154.94)
+			(xy 222.25 154.94) (xy 222.25 160.02)
 		)
 		(stroke
 			(width 0)
@@ -7053,7 +7335,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 130.81) (xy 208.28 130.81)
+			(xy 196.85 135.89) (xy 208.28 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7063,7 +7345,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 39.37) (xy 212.09 39.37)
+			(xy 213.36 31.75) (xy 212.09 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7103,7 +7385,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 143.51) (xy 228.6 142.24)
+			(xy 228.6 148.59) (xy 228.6 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7133,7 +7415,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 41.91) (xy 213.36 39.37)
+			(xy 213.36 34.29) (xy 213.36 31.75)
 		)
 		(stroke
 			(width 0)
@@ -7163,7 +7445,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 58.42) (xy 241.3 55.88)
+			(xy 241.3 50.8) (xy 241.3 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7203,7 +7485,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 71.12) (xy 245.11 71.12)
+			(xy 27.94 53.34) (xy 39.37 53.34)
 		)
 		(stroke
 			(width 0)
@@ -7243,7 +7525,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 152.4) (xy 255.27 151.13)
+			(xy 255.27 157.48) (xy 255.27 156.21)
 		)
 		(stroke
 			(width 0)
@@ -7263,13 +7545,23 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 71.12) (xy 276.86 71.12)
+			(xy 39.37 53.34) (xy 71.12 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b141d4be-ae7b-4188-8f2f-0f1145c86d21")
+	)
+	(wire
+		(pts
+			(xy 201.93 90.17) (xy 204.47 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3294d64-6684-4043-aa98-e084da628822")
 	)
 	(wire
 		(pts
@@ -7283,7 +7575,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 80.01) (xy 245.11 81.28)
+			(xy 39.37 62.23) (xy 39.37 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7323,7 +7615,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 140.97) (xy 259.08 143.51)
+			(xy 259.08 146.05) (xy 259.08 148.59)
 		)
 		(stroke
 			(width 0)
@@ -7353,7 +7645,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 71.12) (xy 223.52 81.28)
+			(xy 17.78 53.34) (xy 17.78 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7523,6 +7815,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 90.17) (xy 257.81 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5538d7a-a72a-41bf-a9c2-d103c95b923e")
+	)
+	(wire
+		(pts
 			(xy 148.59 30.48) (xy 148.59 31.75)
 		)
 		(stroke
@@ -7533,7 +7835,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 149.86) (xy 204.47 149.86)
+			(xy 196.85 154.94) (xy 204.47 154.94)
 		)
 		(stroke
 			(width 0)
@@ -7563,7 +7865,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 49.53) (xy 248.92 49.53)
+			(xy 251.46 41.91) (xy 248.92 41.91)
 		)
 		(stroke
 			(width 0)
@@ -7593,6 +7895,26 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 100.33) (xy 257.81 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d368b398-598d-4927-8bab-22a43d97788b")
+	)
+	(wire
+		(pts
+			(xy 254 90.17) (xy 257.81 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3938df1-8eb5-4c35-bb6b-311424a59339")
+	)
+	(wire
+		(pts
 			(xy 125.73 36.83) (xy 125.73 39.37)
 		)
 		(stroke
@@ -7603,7 +7925,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 76.2) (xy 251.46 76.2)
+			(xy 44.45 58.42) (xy 45.72 58.42)
 		)
 		(stroke
 			(width 0)
@@ -7613,7 +7935,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 46.99) (xy 241.3 46.99)
+			(xy 231.14 39.37) (xy 241.3 39.37)
 		)
 		(stroke
 			(width 0)
@@ -7623,7 +7945,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 81.28) (xy 276.86 81.28)
+			(xy 60.96 63.5) (xy 71.12 63.5)
 		)
 		(stroke
 			(width 0)
@@ -7633,7 +7955,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 46.99) (xy 248.92 46.99)
+			(xy 251.46 39.37) (xy 248.92 39.37)
 		)
 		(stroke
 			(width 0)
@@ -7653,7 +7975,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 140.97) (xy 267.97 140.97)
+			(xy 246.38 146.05) (xy 267.97 146.05)
 		)
 		(stroke
 			(width 0)
@@ -7713,13 +8035,33 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 46.99) (xy 241.3 46.99)
+			(xy 246.38 39.37) (xy 241.3 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e0ee572b-826c-4dcf-bdf2-6d3aa10b6466")
+	)
+	(wire
+		(pts
+			(xy 243.84 90.17) (xy 246.38 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1875815-c6fe-4c77-81aa-98262dc6934c")
+	)
+	(wire
+		(pts
+			(xy 243.84 100.33) (xy 246.38 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2e483a0-7359-4740-97a0-860d3eef78a7")
 	)
 	(wire
 		(pts
@@ -7753,7 +8095,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 130.81) (xy 196.85 130.81)
+			(xy 194.31 135.89) (xy 196.85 135.89)
 		)
 		(stroke
 			(width 0)
@@ -7763,7 +8105,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 132.08) (xy 259.08 133.35)
+			(xy 259.08 137.16) (xy 259.08 138.43)
 		)
 		(stroke
 			(width 0)
@@ -7773,7 +8115,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 55.88) (xy 276.86 58.42)
+			(xy 276.86 48.26) (xy 276.86 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7783,7 +8125,27 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 132.08) (xy 252.73 135.89)
+			(xy 254 100.33) (xy 257.81 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea587ebd-5f72-4ef0-9741-1ec63ba540bb")
+	)
+	(wire
+		(pts
+			(xy 233.68 90.17) (xy 236.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eab87611-5444-4481-bdf9-48c738ddee77")
+	)
+	(wire
+		(pts
+			(xy 252.73 137.16) (xy 252.73 140.97)
 		)
 		(stroke
 			(width 0)
@@ -7813,13 +8175,23 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 46.99) (xy 276.86 45.72)
+			(xy 276.86 39.37) (xy 276.86 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ee776622-3396-4451-b6e6-63f574cccd0e")
+	)
+	(wire
+		(pts
+			(xy 191.77 100.33) (xy 194.31 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0ec4008-74ca-45af-b52a-0bf28e703b22")
 	)
 	(wire
 		(pts
@@ -7833,7 +8205,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 146.05) (xy 204.47 146.05)
+			(xy 196.85 151.13) (xy 204.47 151.13)
 		)
 		(stroke
 			(width 0)
@@ -7863,7 +8235,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 139.7) (xy 228.6 142.24)
+			(xy 228.6 144.78) (xy 228.6 147.32)
 		)
 		(stroke
 			(width 0)
@@ -7893,7 +8265,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 57.15) (xy 259.08 58.42)
+			(xy 259.08 49.53) (xy 259.08 50.8)
 		)
 		(stroke
 			(width 0)
@@ -7903,7 +8275,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 81.28) (xy 223.52 81.28)
+			(xy 20.32 63.5) (xy 17.78 63.5)
 		)
 		(stroke
 			(width 0)
@@ -8621,16 +8993,6 @@
 		)
 		(uuid "00f494ed-b2eb-4015-b17a-c9e64f843e09")
 	)
-	(label "TP4"
-		(at 163.83 194.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "046ea478-2e5a-4817-91ee-cecf71b25f63")
-	)
 	(label "XOUT"
 		(at 88.9 120.65 0)
 		(effects
@@ -8681,6 +9043,16 @@
 		)
 		(uuid "1c2ff4ee-ddda-441c-bea6-f745535d6112")
 	)
+	(label "GPIO16{slash}TX"
+		(at 233.68 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "23f1c4fa-6d72-4acb-a608-48a130f24f6c")
+	)
 	(label "GPIO2"
 		(at 168.91 62.23 180)
 		(effects
@@ -8692,7 +9064,7 @@
 		(uuid "279c34ec-274e-4c42-8fb6-5e2781fcf7d4")
 	)
 	(label "GPIO28"
-		(at 185.42 133.35 180)
+		(at 185.42 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8712,7 +9084,7 @@
 		(uuid "32eaffb6-572b-4081-a211-2156992f2b10")
 	)
 	(label "SWDIO"
-		(at 196.85 130.81 0)
+		(at 196.85 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8812,7 +9184,7 @@
 		(uuid "45e47641-9fcc-4927-9bd5-ac1f491bf09f")
 	)
 	(label "GPIO27"
-		(at 217.17 154.94 180)
+		(at 217.17 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8871,6 +9243,16 @@
 		)
 		(uuid "56a63fe2-586e-4f62-a03e-4991c529b612")
 	)
+	(label "SWDIO"
+		(at 191.77 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56d4d6d3-15fc-4fcf-83cd-bb78aeba3986")
+	)
 	(label "GPIO26"
 		(at 168.91 125.73 180)
 		(effects
@@ -8892,7 +9274,7 @@
 		(uuid "58a910c6-89cd-48ca-89e2-3cc4a63da844")
 	)
 	(label "USB_D+"
-		(at 223.52 52.07 180)
+		(at 223.52 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8950,6 +9332,16 @@
 			(justify left bottom)
 		)
 		(uuid "75753181-70c1-4faa-935a-dd7daf63226c")
+	)
+	(label "USB_D-"
+		(at 163.83 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a14bc9f-08cc-4508-9689-f4014f723f09")
 	)
 	(label "GPIO11"
 		(at 168.91 85.09 180)
@@ -9022,7 +9414,7 @@
 		(uuid "a7e2b791-5f81-4514-b7e1-fa417d1da132")
 	)
 	(label "GPIO17{slash}RX"
-		(at 246.38 140.97 180)
+		(at 246.38 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9032,7 +9424,7 @@
 		(uuid "a91bb033-e7ee-4c58-9207-693e004bedb8")
 	)
 	(label "GPIO16{slash}TX"
-		(at 246.38 138.43 180)
+		(at 246.38 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9081,18 +9473,8 @@
 		)
 		(uuid "ba063644-195d-4ad1-90b3-6c1901d5521d")
 	)
-	(label "TP3"
-		(at 149.86 194.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bfa1882e-50c1-4729-b7ab-fc6ee8ba6eea")
-	)
 	(label "GPIO26"
-		(at 185.42 123.19 180)
+		(at 185.42 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9102,7 +9484,7 @@
 		(uuid "c17126e8-22cd-42f2-b929-1365d15c1596")
 	)
 	(label "USB_D-"
-		(at 223.52 54.61 180)
+		(at 223.52 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9161,6 +9543,16 @@
 		)
 		(uuid "d4e49ed0-a377-4254-8c02-111318836265")
 	)
+	(label "USB_D+"
+		(at 149.86 194.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d91c03d2-a0c6-4e35-9d28-83d17d7b4f7d")
+	)
 	(label "GPIO5"
 		(at 168.91 69.85 180)
 		(effects
@@ -9182,7 +9574,7 @@
 		(uuid "e1e4a587-f424-41da-9fc4-fcde2964e35c")
 	)
 	(label "XOUT"
-		(at 276.86 81.28 180)
+		(at 71.12 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9212,7 +9604,7 @@
 		(uuid "ecc3bd4f-1e17-4eff-9bf6-716d967f69f6")
 	)
 	(label "XIN"
-		(at 276.86 71.12 180)
+		(at 71.12 53.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9231,6 +9623,16 @@
 		)
 		(uuid "ee52f357-0036-48ec-829b-8bb5e0342d02")
 	)
+	(label "GPIO17{slash}RX"
+		(at 233.68 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee89b868-8251-47ee-b7cb-02e28e88ea7a")
+	)
 	(label "GPIO23"
 		(at 168.91 115.57 180)
 		(effects
@@ -9242,7 +9644,17 @@
 		(uuid "f10aa62f-01aa-44f7-9074-a82845a806c7")
 	)
 	(label "SWCLK"
-		(at 196.85 125.73 0)
+		(at 191.77 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f1bb2c8e-a28d-4104-8357-c3bb465f7aa9")
+	)
+	(label "SWCLK"
+		(at 196.85 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9336,6 +9748,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 76.2 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14e50e03-2161-44d4-b07f-33fad262445e")
 		)
@@ -9353,7 +9820,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 269.24 58.42 0)
+		(at 269.24 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9363,7 +9830,7 @@
 		(dnp no)
 		(uuid "045c092f-e951-4622-8013-f8ffda6e640d")
 		(property "Reference" "#FLG04"
-			(at 269.24 56.515 0)
+			(at 269.24 48.895 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9374,7 +9841,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 269.24 54.0258 0)
+			(at 269.24 46.4058 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9384,7 +9851,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 269.24 58.42 0)
+			(at 269.24 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9395,7 +9862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 58.42 0)
+			(at 269.24 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9406,7 +9873,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 269.24 58.42 0)
+			(at 269.24 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9429,7 +9896,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 128.27 270)
+		(at 185.42 133.35 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9439,7 +9906,7 @@
 		(dnp no)
 		(uuid "06033b75-5468-482e-97da-235c0be3633c")
 		(property "Reference" "#PWR034"
-			(at 179.07 128.27 0)
+			(at 179.07 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9450,7 +9917,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 128.27 90)
+			(at 180.34 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9460,7 +9927,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 128.27 0)
+			(at 185.42 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9471,7 +9938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 128.27 0)
+			(at 185.42 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9482,7 +9949,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 128.27 0)
+			(at 185.42 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9505,7 +9972,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 190.5 133.35 270)
+		(at 190.5 138.43 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9515,7 +9982,7 @@
 		(dnp no)
 		(uuid "086067e0-557c-4698-8004-279bff30a04d")
 		(property "Reference" "R17"
-			(at 190.5 131.318 90)
+			(at 190.5 136.398 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9525,7 +9992,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 190.5 135.89 90)
+			(at 190.5 140.97 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9535,7 +10002,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 190.5 131.572 90)
+			(at 190.5 136.652 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9546,7 +10013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 133.35 0)
+			(at 190.5 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9557,7 +10024,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 133.35 0)
+			(at 190.5 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 190.5 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 190.5 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 190.5 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 190.5 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 190.5 138.43 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9583,7 +10105,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 190.5 123.19 270)
+		(at 190.5 128.27 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9593,7 +10115,7 @@
 		(dnp no)
 		(uuid "08ca5f96-bbe4-46e0-b143-454208fa598e")
 		(property "Reference" "R18"
-			(at 190.5 121.158 90)
+			(at 190.5 126.238 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9603,7 +10125,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 190.5 125.73 90)
+			(at 190.5 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9613,7 +10135,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 190.5 121.412 90)
+			(at 190.5 126.492 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9624,7 +10146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 123.19 0)
+			(at 190.5 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9635,7 +10157,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 123.19 0)
+			(at 190.5 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 190.5 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 190.5 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 190.5 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 190.5 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 190.5 128.27 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9661,7 +10238,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 229.87 49.53 90)
+		(at 229.87 41.91 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9671,7 +10248,7 @@
 		(dnp no)
 		(uuid "0978df34-4799-4475-a0ae-d229d044593d")
 		(property "Reference" "R4"
-			(at 231.14 51.816 90)
+			(at 231.14 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9682,7 +10259,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 232.156 54.102 90)
+			(at 232.156 46.482 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9693,7 +10270,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 229.87 49.53 0)
+			(at 229.87 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9704,7 +10281,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 49.53 0)
+			(at 229.87 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9715,7 +10292,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 49.53 0)
+			(at 229.87 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 229.87 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 229.87 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 229.87 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 229.87 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 229.87 41.91 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9740,8 +10372,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 229.87 71.12 270)
+		(lib_id "power:GND")
+		(at 257.81 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9749,31 +10381,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0a56c581-154e-4ae4-a41a-dc3e4df6480d")
-		(property "Reference" "C15"
-			(at 231.0384 74.041 0)
+		(fields_autoplaced yes)
+		(uuid "0a23c4f2-2aad-4baf-a996-d537bff9c50c")
+		(property "Reference" "#PWR0111"
+			(at 257.81 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "15p"
-			(at 228.727 74.041 0)
+		(property "Value" "GND"
+			(at 257.81 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 226.06 72.0852 0)
+		(property "Footprint" ""
+			(at 257.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9784,7 +10416,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 71.12 0)
+			(at 257.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9795,7 +10427,139 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 71.12 0)
+			(at 257.81 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bfda6b77-f901-479b-aea4-15deb1faa2a7")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 24.13 53.34 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a56c581-154e-4ae4-a41a-dc3e4df6480d")
+		(property "Reference" "C15"
+			(at 25.2984 56.261 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15p"
+			(at 22.987 56.261 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 20.32 54.3052 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 24.13 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 24.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 24.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 24.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 24.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 24.13 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9884,6 +10648,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 107.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 107.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 107.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 107.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 107.95 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ffd68ddd-db46-4ce5-813c-ae77ab848450")
 		)
@@ -9901,7 +10720,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 149.86 270)
+		(at 196.85 154.94 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9911,7 +10730,7 @@
 		(dnp no)
 		(uuid "164ab9f2-fa90-4aca-9ce5-62b36a44ee18")
 		(property "Reference" "#PWR035"
-			(at 190.5 149.86 0)
+			(at 190.5 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9922,7 +10741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 191.77 149.86 90)
+			(at 191.77 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9932,7 +10751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9943,7 +10762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9954,7 +10773,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 149.86 0)
+			(at 196.85 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9977,7 +10796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 241.3 52.07 0)
+		(at 241.3 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9987,7 +10806,7 @@
 		(dnp no)
 		(uuid "17687eca-a2e2-4cf9-8575-632fe3f39f0e")
 		(property "Reference" "C19"
-			(at 244.221 50.9016 0)
+			(at 244.221 43.2816 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9998,7 +10817,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 244.221 53.213 0)
+			(at 244.221 45.593 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10009,7 +10828,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 242.2652 55.88 0)
+			(at 242.2652 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10020,7 +10839,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 52.07 0)
+			(at 241.3 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10031,7 +10850,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 241.3 52.07 0)
+			(at 241.3 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 241.3 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 241.3 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 241.3 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 241.3 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 241.3 44.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10120,6 +10994,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 34.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 34.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 34.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 34.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 34.29 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82e8acc9-9b3e-43e1-90c1-56b7242cbdf4")
 		)
@@ -10192,6 +11121,61 @@
 		)
 		(property "Description" ""
 			(at 45.72 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 45.72 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 45.72 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 45.72 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 45.72 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 45.72 27.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10293,7 +11277,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 251.46 76.2 0)
+		(at 45.72 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10303,7 +11287,7 @@
 		(dnp no)
 		(uuid "24354063-38ec-4b8a-86cf-1109a5d73a2d")
 		(property "Reference" "#PWR026"
-			(at 251.46 82.55 0)
+			(at 45.72 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10314,7 +11298,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 255.27 77.47 0)
+			(at 49.53 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10324,7 +11308,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 76.2 0)
+			(at 45.72 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10335,7 +11319,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 76.2 0)
+			(at 45.72 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10346,7 +11330,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 76.2 0)
+			(at 45.72 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10362,6 +11346,83 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25f741c1-0c9b-4022-bcb3-e1579f9155cf")
+		(property "Reference" "#PWR0107"
+			(at 215.9 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 215.9 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be55d56b-0b5e-400e-a486-010ac29c8fab")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -10510,6 +11571,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 171.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 171.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 171.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 171.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 171.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "611c0301-9fdc-4fcc-8aef-69eaa1b82102")
 		)
@@ -10639,6 +11755,61 @@
 			)
 		)
 		(property "Substitute" "Y"
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 34.29 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 34.29 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -10797,6 +11968,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 78.105 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 78.105 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 78.105 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 78.105 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 78.105 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4f26d9ff-980e-4e8d-a783-1286d4e346c8")
 		)
@@ -10892,7 +12118,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 238.76 76.2 0)
+		(at 33.02 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10902,7 +12128,7 @@
 		(dnp no)
 		(uuid "3da36ce6-590f-4b2f-b275-459d9d3fb215")
 		(property "Reference" "#PWR025"
-			(at 238.76 82.55 0)
+			(at 33.02 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10913,7 +12139,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 77.47 0)
+			(at 29.21 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10923,7 +12149,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 76.2 0)
+			(at 33.02 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10934,7 +12160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 76.2 0)
+			(at 33.02 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10945,7 +12171,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.76 76.2 0)
+			(at 33.02 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10961,6 +12187,139 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 198.12 100.33 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3ef86af7-6482-4225-b4d9-522d07825748")
+		(property "Reference" "R21"
+			(at 198.12 98.298 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 198.12 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 198.12 98.552 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 198.12 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 198.12 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 198.12 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 198.12 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 198.12 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db1190e4-a22e-4995-97de-1164573c998a")
+		)
+		(pin "2"
+			(uuid "4400cfd0-6917-4eb8-953d-fe5521e6af04")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -11109,6 +12468,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 149.86 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 149.86 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 149.86 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 149.86 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 149.86 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "16d69151-16d3-4211-90e5-9aacd792c85f")
 		)
@@ -11186,6 +12600,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 97.79 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 97.79 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 97.79 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 97.79 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 97.79 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d041f9d1-c583-45e8-bcd4-6045657e7a19")
 		)
@@ -11203,7 +12672,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 255.27 152.4 180)
+		(at 255.27 157.48 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11213,7 +12682,7 @@
 		(dnp no)
 		(uuid "4663c8ac-fa14-49fa-bb28-157c5f6f496f")
 		(property "Reference" "#PWR033"
-			(at 255.27 148.59 0)
+			(at 255.27 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11224,7 +12693,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 255.524 156.718 0)
+			(at 255.524 161.798 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11234,7 +12703,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 152.4 0)
+			(at 255.27 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11245,7 +12714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 152.4 0)
+			(at 255.27 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11256,7 +12725,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 255.27 152.4 0)
+			(at 255.27 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11336,6 +12805,61 @@
 		)
 		(property "Description" ""
 			(at 38.1 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 38.1 104.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11480,6 +13004,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 88.265 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 88.265 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 88.265 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 88.265 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 88.265 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "34ad6cde-0fe9-41b0-a7e2-11a2fe003291")
 		)
@@ -11497,7 +13076,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 59.69 58.42 0)
+		(at 90.17 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11507,7 +13086,7 @@
 		(dnp no)
 		(uuid "5089e8a2-a482-4973-9c0d-0431a09c0651")
 		(property "Reference" "C2"
-			(at 62.611 57.2516 0)
+			(at 93.091 53.4416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11518,7 +13097,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 62.611 59.563 0)
+			(at 93.091 55.753 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11529,7 +13108,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 60.6552 62.23 0)
+			(at 91.1352 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11540,7 +13119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 58.42 0)
+			(at 90.17 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11551,7 +13130,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 58.42 0)
+			(at 90.17 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 90.17 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 90.17 54.61 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11693,6 +13327,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 71.12 173.355 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 71.12 173.355 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 71.12 173.355 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 71.12 173.355 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 71.12 173.355 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f4bedfc4-99cb-4c6b-a07b-73e4665d31f5")
 		)
@@ -11710,7 +13399,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
-		(at 213.36 128.27 0)
+		(at 213.36 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11720,7 +13409,7 @@
 		(dnp no)
 		(uuid "53db9f4c-e20c-42c7-a654-776f54fe3d06")
 		(property "Reference" "J1"
-			(at 214.63 126.9999 0)
+			(at 214.63 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11731,7 +13420,7 @@
 			)
 		)
 		(property "Value" "JST_01x03"
-			(at 207.01 133.858 0)
+			(at 207.01 138.938 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11742,7 +13431,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
-			(at 213.36 128.27 0)
+			(at 213.36 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11753,7 +13442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 128.27 0)
+			(at 213.36 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11764,7 +13453,62 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 213.36 128.27 0)
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 213.36 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11869,8 +13613,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 276.86 52.07 0)
+		(lib_id "power:GND")
+		(at 215.9 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11878,31 +13622,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5ed6709f-e81f-4889-8de2-27c2766d73be")
-		(property "Reference" "C21"
-			(at 279.781 50.9016 0)
+		(fields_autoplaced yes)
+		(uuid "5cc2f4da-e8ee-4298-880e-6396493b13bc")
+		(property "Reference" "#PWR0108"
+			(at 215.9 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 279.781 53.213 0)
+		(property "Value" "GND"
+			(at 215.9 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 277.8252 55.88 0)
+		(property "Footprint" ""
+			(at 215.9 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11913,7 +13657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 52.07 0)
+			(at 215.9 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11924,7 +13668,139 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 52.07 0)
+			(at 215.9 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "085d78dd-7e38-4719-ad7c-c9d5351dc638")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 276.86 44.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ed6709f-e81f-4889-8de2-27c2766d73be")
+		(property "Reference" "C21"
+			(at 279.781 43.2816 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 279.781 45.593 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 277.8252 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 276.86 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 276.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 276.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 276.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 276.86 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 276.86 44.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12062,6 +13938,61 @@
 		)
 		(property "Substitute" "Y"
 			(at 59.69 175.895 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 59.69 175.895 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 59.69 175.895 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 59.69 175.895 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 59.69 175.895 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 59.69 175.895 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12241,6 +14172,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 163.83 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 163.83 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 163.83 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 163.83 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 163.83 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "53a60eb8-d001-4938-8184-8f6733cb83b9")
 		)
@@ -12255,7 +14241,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 262.89 81.28 270)
+		(at 57.15 63.5 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12265,7 +14251,7 @@
 		(dnp no)
 		(uuid "66143971-1a9d-418e-bbf6-08dce8d491c4")
 		(property "Reference" "R8"
-			(at 262.89 76.0222 90)
+			(at 57.15 58.2422 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12275,7 +14261,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 262.89 78.3336 90)
+			(at 57.15 60.5536 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12285,7 +14271,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 262.89 79.502 90)
+			(at 57.15 61.722 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12296,7 +14282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 262.89 81.28 0)
+			(at 57.15 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12307,7 +14293,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 262.89 81.28 0)
+			(at 57.15 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 57.15 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 57.15 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 57.15 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 57.15 63.5 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 57.15 63.5 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12396,6 +14437,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 86.36 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 86.36 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 86.36 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 86.36 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 86.36 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7f51079c-8d1d-4a8f-aa6b-a447ada005e7")
 		)
@@ -12406,6 +14502,96 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 208.28 100.33 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6e551d3a-4875-40e8-8635-95b3799aedb2")
+		(property "Reference" "D2"
+			(at 209.296 96.774 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 209.55 103.378 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 208.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 208.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "19b2135f-2fde-43a9-8018-c734110119fc")
+		)
+		(pin "1"
+			(uuid "6115f644-4beb-487b-8b69-ec92b86980ef")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -12468,6 +14654,61 @@
 		)
 		(property "Description" ""
 			(at 149.86 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 149.86 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 149.86 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 149.86 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 149.86 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 149.86 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12569,7 +14810,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 276.86 45.72 0)
+		(at 276.86 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12580,7 +14821,7 @@
 		(fields_autoplaced yes)
 		(uuid "757fded1-9173-445a-84ce-6b2d87065403")
 		(property "Reference" "#PWR013"
-			(at 276.86 49.53 0)
+			(at 276.86 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12591,7 +14832,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 276.86 40.64 0)
+			(at 276.86 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12601,7 +14842,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 45.72 0)
+			(at 276.86 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12612,7 +14853,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 45.72 0)
+			(at 276.86 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12623,7 +14864,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 276.86 45.72 0)
+			(at 276.86 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12767,6 +15008,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8760d1d7-d1b6-495e-a47d-7af9dbe38a87")
 		)
@@ -12859,6 +15155,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 55.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 55.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 55.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 55.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 55.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9b97c8bb-7b51-4675-a429-ba5a42f34828")
 		)
@@ -12876,7 +15227,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 63.5 0)
+		(at 90.17 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12886,7 +15237,7 @@
 		(dnp no)
 		(uuid "7bbd2032-0e0a-4fbb-8064-28b61d7ec0e7")
 		(property "Reference" "#PWR05"
-			(at 59.69 69.85 0)
+			(at 90.17 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12897,7 +15248,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 64.77 0)
+			(at 86.36 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12907,7 +15258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 63.5 0)
+			(at 90.17 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12918,7 +15269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 63.5 0)
+			(at 90.17 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12929,7 +15280,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 63.5 0)
+			(at 90.17 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12951,8 +15302,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 276.86 59.69 0)
+		(lib_id "Device:R")
+		(at 198.12 90.17 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12960,10 +15311,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7f0815b1-edce-4593-8fb0-ad1a4147041a")
-		(property "Reference" "#PWR031"
-			(at 276.86 66.04 0)
-			(hide yes)
+		(uuid "7eaf3068-cc3a-432a-984a-9fa30cf0177d")
+		(property "Reference" "R20"
+			(at 198.12 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12972,8 +15322,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 273.05 60.96 0)
+		(property "Value" "470"
+			(at 198.12 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12982,8 +15332,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 276.86 59.69 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 198.12 88.392 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12994,7 +15344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 59.69 0)
+			(at 198.12 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13005,7 +15355,141 @@
 			)
 		)
 		(property "Description" ""
-			(at 276.86 59.69 0)
+			(at 198.12 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 198.12 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 198.12 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 198.12 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 198.12 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 198.12 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44e50948-a482-40d2-98fc-6948d0c6260a")
+		)
+		(pin "2"
+			(uuid "af7e824f-057f-45d8-a705-ca64f3f63190")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 276.86 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f0815b1-edce-4593-8fb0-ad1a4147041a")
+		(property "Reference" "#PWR031"
+			(at 276.86 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.05 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 276.86 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 276.86 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13021,6 +15505,139 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 100.33 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7fde751b-3f72-4f28-8f77-8aecc3151d46")
+		(property "Reference" "R22"
+			(at 240.03 98.298 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 240.03 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 240.03 98.552 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 240.03 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 240.03 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 240.03 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 240.03 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 240.03 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06d91a46-878c-4f9d-b4e1-6c0405f28b01")
+		)
+		(pin "2"
+			(uuid "616b40b3-0864-440d-9923-317878099f3a")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -13147,6 +15764,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 60.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "36d07afe-9c85-4980-afea-4ba59d1e745b")
 		)
@@ -13164,7 +15836,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 38.1 180)
+		(at 217.17 30.48 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13174,7 +15846,7 @@
 		(dnp no)
 		(uuid "85957017-dcbd-4269-90ea-2440988090e0")
 		(property "Reference" "#PWR015"
-			(at 217.17 31.75 0)
+			(at 217.17 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13185,7 +15857,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.043 33.7058 0)
+			(at 217.043 26.0858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13195,7 +15867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 38.1 0)
+			(at 217.17 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13206,7 +15878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 38.1 0)
+			(at 217.17 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13217,7 +15889,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 38.1 0)
+			(at 217.17 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13240,7 +15912,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AP2127K-3.3")
-		(at 259.08 49.53 0)
+		(at 259.08 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13251,7 +15923,7 @@
 		(fields_autoplaced yes)
 		(uuid "87691553-fa0d-4c80-8bda-33a2f2d33dc5")
 		(property "Reference" "U4"
-			(at 259.08 40.64 0)
+			(at 259.08 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13261,7 +15933,7 @@
 			)
 		)
 		(property "Value" "AP2127K-3.3"
-			(at 259.08 43.18 0)
+			(at 259.08 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13271,7 +15943,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 259.08 41.275 0)
+			(at 259.08 33.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13282,7 +15954,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2127.pdf"
-			(at 259.08 46.99 0)
+			(at 259.08 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13293,7 +15965,62 @@
 			)
 		)
 		(property "Description" "300mA low dropout linear regulator, shutdown pin, 2.5V-6V input voltage, 3.3V fixed positive output, SOT-23-5"
-			(at 259.08 49.53 0)
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 259.08 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 259.08 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13392,6 +16119,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 160.02 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 160.02 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 160.02 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 160.02 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 160.02 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "062e1e6e-f31f-42a4-9ef5-a56ac3b20247")
 		)
@@ -13409,7 +16191,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 228.6 147.32 180)
+		(at 228.6 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13419,7 +16201,7 @@
 		(dnp no)
 		(uuid "8cf645db-3e42-49fc-812a-9f126c54f4a6")
 		(property "Reference" "C25"
-			(at 225.806 147.828 0)
+			(at 225.806 152.908 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13430,7 +16212,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 226.314 145.796 0)
+			(at 226.314 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13441,7 +16223,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 227.6348 143.51 0)
+			(at 227.6348 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13452,7 +16234,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 147.32 0)
+			(at 228.6 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13463,7 +16245,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 147.32 0)
+			(at 228.6 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 228.6 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 228.6 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 228.6 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 228.6 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 228.6 152.4 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13566,7 +16403,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 152.4 0)
+		(at 228.6 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13576,7 +16413,7 @@
 		(dnp no)
 		(uuid "92a9d2f4-e091-49ff-9dfc-555969b5b8dd")
 		(property "Reference" "#PWR036"
-			(at 228.6 158.75 0)
+			(at 228.6 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13587,7 +16424,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 156.972 0)
+			(at 228.6 162.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13597,7 +16434,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 152.4 0)
+			(at 228.6 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13608,7 +16445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 152.4 0)
+			(at 228.6 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13619,7 +16456,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 152.4 0)
+			(at 228.6 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13765,6 +16602,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 108.585 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 108.585 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 108.585 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 108.585 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 108.585 173.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dfdaa22a-0489-48da-8a56-737e4c4366e1")
 		)
@@ -13857,6 +16749,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 17.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 17.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 17.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 17.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 17.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "693d775c-f1d1-4fba-988c-67c367311f56")
 		)
@@ -13927,6 +16874,61 @@
 		)
 		(property "Description" ""
 			(at 88.9 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 88.9 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 88.9 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 88.9 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 88.9 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 88.9 82.55 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14091,6 +17093,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 66.04 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 66.04 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 66.04 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 66.04 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 66.04 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "57782f73-4c07-4c7c-ab7d-86e590cd663e")
 		)
@@ -14108,7 +17165,7 @@
 	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
-		(at 245.11 76.2 270)
+		(at 39.37 58.42 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14118,7 +17175,7 @@
 		(dnp no)
 		(uuid "a6c9f7bb-6ac9-4cfe-92b2-ae3b5295cfc3")
 		(property "Reference" "Y1"
-			(at 250.19 73.66 90)
+			(at 44.45 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14129,7 +17186,7 @@
 			)
 		)
 		(property "Value" "ABM8-272-T3"
-			(at 238.76 68.58 90)
+			(at 33.02 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14140,7 +17197,7 @@
 			)
 		)
 		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
-			(at 245.11 76.2 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14151,7 +17208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 76.2 0)
+			(at 39.37 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14162,7 +17219,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 245.11 76.2 0)
+			(at 39.37 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 39.37 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 39.37 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 39.37 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 39.37 58.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 39.37 58.42 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14347,7 +17459,7 @@
 	)
 	(symbol
 		(lib_id "pico2symbols:korean_type-c_top_mount")
-		(at 229.87 50.8 0)
+		(at 229.87 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14358,7 +17470,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9710846-0aba-444c-9c31-bbb4f7165b92")
 		(property "Reference" "P1"
-			(at 196.85 30.48 0)
+			(at 196.85 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14368,7 +17480,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 229.87 50.8 0)
+			(at 229.87 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14378,7 +17490,7 @@
 			)
 		)
 		(property "Footprint" "pico2parts:USB-C-SMD_TYPE-C-31-G-10"
-			(at 229.87 50.8 0)
+			(at 229.87 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14389,7 +17501,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 50.8 0)
+			(at 229.87 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14400,7 +17512,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 50.8 0)
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 229.87 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 229.87 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14466,7 +17633,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 229.87 81.28 270)
+		(at 24.13 63.5 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14476,7 +17643,7 @@
 		(dnp no)
 		(uuid "abdb36b5-2a00-40b5-9c18-44d91fb9d1a5")
 		(property "Reference" "C16"
-			(at 231.0384 84.201 0)
+			(at 25.2984 66.421 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14487,7 +17654,7 @@
 			)
 		)
 		(property "Value" "15p"
-			(at 228.727 84.201 0)
+			(at 22.987 66.421 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14498,7 +17665,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 226.06 82.2452 0)
+			(at 20.32 64.4652 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14509,7 +17676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 81.28 0)
+			(at 24.13 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14520,7 +17687,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 229.87 81.28 0)
+			(at 24.13 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 24.13 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 24.13 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 24.13 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 24.13 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 24.13 63.5 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14623,7 +17845,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 83.82 0)
+		(at 17.78 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14633,7 +17855,7 @@
 		(dnp no)
 		(uuid "b87588ed-028c-4bf7-835c-362ba44255bd")
 		(property "Reference" "#PWR016"
-			(at 223.52 90.17 0)
+			(at 17.78 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14644,7 +17866,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.647 88.2142 0)
+			(at 17.907 70.4342 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14654,7 +17876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 83.82 0)
+			(at 17.78 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14665,7 +17887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 83.82 0)
+			(at 17.78 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14676,7 +17898,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 83.82 0)
+			(at 17.78 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14699,7 +17921,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 231.14 45.72 0)
+		(at 231.14 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14709,7 +17931,7 @@
 		(dnp no)
 		(uuid "b8d48a8a-453b-4a3b-8424-e0896cd4e62e")
 		(property "Reference" "#PWR017"
-			(at 231.14 49.53 0)
+			(at 231.14 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14720,7 +17942,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 231.521 41.3258 0)
+			(at 231.521 33.7058 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14730,7 +17952,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 45.72 0)
+			(at 231.14 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14741,7 +17963,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 45.72 0)
+			(at 231.14 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14752,7 +17974,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 231.14 45.72 0)
+			(at 231.14 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14775,7 +17997,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 177.8 60.96 180)
+		(at 177.8 53.34 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14785,7 +18007,7 @@
 		(dnp no)
 		(uuid "ba179daf-2eee-4031-bc8f-b7729ec38d2f")
 		(property "Reference" "#PWR027"
-			(at 177.8 54.61 0)
+			(at 177.8 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14796,7 +18018,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 177.673 56.5658 0)
+			(at 177.673 48.9458 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14806,7 +18028,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 60.96 0)
+			(at 177.8 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14817,7 +18039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 60.96 0)
+			(at 177.8 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14828,7 +18050,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 60.96 0)
+			(at 177.8 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14915,6 +18137,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 27.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 27.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 27.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 27.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 27.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d6e046ce-2723-454c-b5f3-4ecab67ecbb9")
 		)
@@ -14932,7 +18209,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 252.73 132.08 0)
+		(at 252.73 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14942,7 +18219,7 @@
 		(dnp no)
 		(uuid "baeb3783-fd20-4705-8c5e-be1a6887a63a")
 		(property "Reference" "#PWR014"
-			(at 252.73 135.89 0)
+			(at 252.73 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14953,7 +18230,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 252.476 127.762 0)
+			(at 252.476 132.842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14963,7 +18240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 132.08 0)
+			(at 252.73 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14974,7 +18251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 132.08 0)
+			(at 252.73 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14985,7 +18262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 252.73 132.08 0)
+			(at 252.73 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15009,7 +18286,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 251.46 147.32 180)
+		(at 251.46 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15019,7 +18296,7 @@
 		(dnp no)
 		(uuid "bc302fd5-94ba-4529-bb2b-44507ecd5f77")
 		(property "Reference" "R10"
-			(at 256.7178 147.32 90)
+			(at 256.7178 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15029,7 +18306,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 254.4064 147.32 90)
+			(at 254.4064 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15039,7 +18316,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 253.238 147.32 90)
+			(at 253.238 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15050,7 +18327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 147.32 0)
+			(at 251.46 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15061,7 +18338,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 147.32 0)
+			(at 251.46 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 251.46 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 251.46 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 251.46 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 251.46 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 251.46 152.4 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15087,7 +18419,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 246.38 46.99 0)
+		(at 246.38 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15097,7 +18429,7 @@
 		(dnp no)
 		(uuid "bdcee997-2fe8-41d5-b5e3-07c3d77a0568")
 		(property "Reference" "#FLG03"
-			(at 246.38 45.085 0)
+			(at 246.38 37.465 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15108,7 +18440,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 246.38 42.5958 0)
+			(at 246.38 34.9758 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15118,7 +18450,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 46.99 0)
+			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15129,7 +18461,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 46.99 0)
+			(at 246.38 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15140,7 +18472,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 246.38 46.99 0)
+			(at 246.38 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15163,7 +18495,7 @@
 	)
 	(symbol
 		(lib_id "TECHPUBLIC:TP74AUP1T17C5")
-		(at 212.09 146.05 0)
+		(at 212.09 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15173,7 +18505,7 @@
 		(dnp no)
 		(uuid "c0647738-6a69-4f9d-b40c-b5ce76071551")
 		(property "Reference" "U1"
-			(at 212.09 138.938 0)
+			(at 212.09 144.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15183,7 +18515,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 212.09 146.05 0)
+			(at 212.09 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15193,7 +18525,7 @@
 			)
 		)
 		(property "Footprint" "pico2parts:TECH PUBLIC TP74AUP1T17C5"
-			(at 212.09 146.05 0)
+			(at 212.09 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15204,7 +18536,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 146.05 0)
+			(at 212.09 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15215,7 +18547,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 146.05 0)
+			(at 212.09 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 212.09 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 212.09 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 212.09 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 212.09 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 212.09 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15251,7 +18638,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 196.85 138.43 0)
+		(at 196.85 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15261,7 +18648,7 @@
 		(dnp no)
 		(uuid "c3ace3e5-c5c5-40b6-8776-269468bf46e6")
 		(property "Reference" "R19"
-			(at 194.818 138.43 90)
+			(at 194.818 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15271,7 +18658,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 199.39 138.43 90)
+			(at 199.39 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15281,7 +18668,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 195.072 138.43 90)
+			(at 195.072 143.51 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15292,7 +18679,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 138.43 0)
+			(at 196.85 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15303,7 +18690,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 138.43 0)
+			(at 196.85 143.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 196.85 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 196.85 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 196.85 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 196.85 143.51 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 196.85 143.51 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15392,6 +18834,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 118.11 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9185963-e191-41ff-8e0d-11dae261a561")
 		)
@@ -15464,6 +18961,61 @@
 		)
 		(property "Description" ""
 			(at 163.83 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 163.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 163.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 163.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 163.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 163.83 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15549,6 +19101,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 148.59 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 148.59 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 148.59 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 148.59 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 148.59 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b69f4379-a22d-4e31-bec4-a4a6ab45f673")
 		)
@@ -15559,6 +19166,96 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 250.19 90.17 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c72b1a41-8690-4fd5-9274-7a378d154153")
+		(property "Reference" "D3"
+			(at 251.206 86.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 251.46 93.218 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f56d3984-f537-42d3-9aa3-46109d4a53ca")
+		)
+		(pin "1"
+			(uuid "4054b3ca-86bb-4d42-841c-b9814b790511")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -15685,6 +19382,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 20.32 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 20.32 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 20.32 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 20.32 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 20.32 159.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ad242b7e-b546-45b9-b01e-f752740a4f94")
 		)
@@ -15695,6 +19447,139 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 240.03 90.17 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8bd1e0e-241f-42ca-810e-0e76339b5a26")
+		(property "Reference" "R23"
+			(at 240.03 88.138 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 240.03 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 240.03 88.392 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 240.03 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 240.03 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 240.03 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 240.03 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 240.03 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2ee81b6-af22-406d-a391-373bdc940714")
+		)
+		(pin "2"
+			(uuid "6ef9bc17-040f-4bc5-bf08-1d96e38a414e")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -15811,6 +19696,61 @@
 			)
 		)
 		(property "Substitute" "Y"
+			(at 111.125 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 111.125 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 111.125 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 111.125 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 111.125 161.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 111.125 161.925 0)
 			(hide yes)
 			(show_name no)
@@ -15947,6 +19887,61 @@
 			)
 		)
 		(property "Substitute" "Y"
+			(at 36.83 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 36.83 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 36.83 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 36.83 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 36.83 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
 			(at 36.83 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -16183,6 +20178,61 @@
 		)
 		(property "Description" ""
 			(at 45.72 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 45.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 45.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 45.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 45.72 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 45.72 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16428,6 +20478,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 63.5 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2ad925c6-2bc3-478f-bae9-6764eeb14e21")
 		)
@@ -16514,6 +20619,83 @@
 			(project "pico2-expansion-card"
 				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
 					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 257.81 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da9fb0ba-25c0-4b72-96c6-7fcff99b09a6")
+		(property "Reference" "#PWR0110"
+			(at 257.81 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 257.81 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 257.81 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c9978d7-f3f1-4202-96b5-a5a5db743fe1")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "#PWR0110")
 					(unit 1)
 				)
 			)
@@ -16674,7 +20856,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 228.5855 139.7 0)
+		(at 228.5855 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16685,7 +20867,7 @@
 		(fields_autoplaced yes)
 		(uuid "df938879-a963-48c7-9feb-fd35da2d3100")
 		(property "Reference" "#PWR020"
-			(at 228.5855 143.51 0)
+			(at 228.5855 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16696,7 +20878,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 228.5855 134.62 0)
+			(at 228.5855 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16706,7 +20888,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.5855 139.7 0)
+			(at 228.5855 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16717,7 +20899,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.5855 139.7 0)
+			(at 228.5855 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16728,7 +20910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 228.5855 139.7 0)
+			(at 228.5855 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16752,7 +20934,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 59.69 52.07 0)
+		(at 90.17 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16763,7 +20945,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2200395-09c9-4522-b3c9-8272030a124e")
 		(property "Reference" "#PWR032"
-			(at 59.69 55.88 0)
+			(at 90.17 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16774,7 +20956,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 59.69 46.99 0)
+			(at 90.17 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16784,7 +20966,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 52.07 0)
+			(at 90.17 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16795,7 +20977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 52.07 0)
+			(at 90.17 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16806,7 +20988,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 59.69 52.07 0)
+			(at 90.17 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16986,7 +21168,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 50.8 0)
+		(at 236.22 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16996,7 +21178,7 @@
 		(dnp no)
 		(uuid "e78d45b3-bedd-47e7-bf0e-141536e0e6a0")
 		(property "Reference" "#PWR018"
-			(at 236.22 57.15 0)
+			(at 236.22 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17007,7 +21189,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 236.347 55.1942 0)
+			(at 236.347 47.5742 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17017,7 +21199,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 50.8 0)
+			(at 236.22 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17028,7 +21210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 50.8 0)
+			(at 236.22 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17039,7 +21221,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 50.8 0)
+			(at 236.22 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17061,8 +21243,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 273.05 135.89 0)
+		(lib_id "Device:LED")
+		(at 208.28 90.17 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17070,31 +21252,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ee35fe08-a951-4444-9df4-f3ebca10b758")
-		(property "Reference" "J2"
-			(at 274.32 135.8899 0)
+		(uuid "ec0c50c5-66d9-4668-8ce2-c3ed7f41e85e")
+		(property "Reference" "D1"
+			(at 209.296 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "JST_01x04"
-			(at 266.954 143.51 0)
+		(property "Value" "LED"
+			(at 209.55 93.218 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
-			(at 273.05 135.89 0)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 208.28 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17105,7 +21285,189 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 273.05 135.89 0)
+			(at 208.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 208.28 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "68ca5b21-60bb-40d4-bf98-e88a4252a641")
+		)
+		(pin "1"
+			(uuid "a66529eb-b47b-436d-8c8b-3bcbaf9deb0d")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 250.19 100.33 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ed25eefd-0928-4750-8647-d287e5ac7185")
+		(property "Reference" "D4"
+			(at 251.206 96.774 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 251.46 103.378 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+			(at 250.19 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 250.19 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 250.19 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f49a17bf-f64b-4a35-8d07-8d3e7dea40ec")
+		)
+		(pin "1"
+			(uuid "a6717215-69b7-4b1d-b67d-db9a6f0c1c86")
+		)
+		(instances
+			(project "pico2-expansion-card"
+				(path "/298f0c21-f8de-4062-a465-7d71ba12f866"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 273.05 140.97 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee35fe08-a951-4444-9df4-f3ebca10b758")
+		(property "Reference" "J2"
+			(at 274.32 140.9699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JST_01x04"
+			(at 266.954 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal"
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17116,7 +21478,62 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 273.05 135.89 0)
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 273.05 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 273.05 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17268,6 +21685,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 98.425 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 98.425 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 98.425 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 98.425 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 98.425 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46c08068-e8c0-4645-ab70-3592ab51242a")
 		)
@@ -17341,6 +21813,61 @@
 		)
 		(property "Description" ""
 			(at 20.32 179.705 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 20.32 179.705 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 20.32 179.705 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 20.32 179.705 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 20.32 179.705 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 20.32 179.705 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17446,6 +21973,39 @@
 			(at 128.27 97.79 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 128.27 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 128.27 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 128.27 95.25 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -17708,6 +22268,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 88.9 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 88.9 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 88.9 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 88.9 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 88.9 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ed579174-7b48-4dae-a3a9-f1e5f20e7c7e")
 		)
@@ -17801,7 +22416,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 259.08 147.32 180)
+		(at 259.08 152.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17811,7 +22426,7 @@
 		(dnp no)
 		(uuid "fd16a8d2-231a-4ebe-8750-be3e4469586a")
 		(property "Reference" "R16"
-			(at 264.3378 147.32 90)
+			(at 264.3378 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17821,7 +22436,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 262.0264 147.32 90)
+			(at 262.0264 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17831,7 +22446,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 260.858 147.32 90)
+			(at 260.858 152.4 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17842,7 +22457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 147.32 0)
+			(at 259.08 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17853,7 +22468,62 @@
 			)
 		)
 		(property "Description" ""
-			(at 259.08 147.32 0)
+			(at 259.08 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 259.08 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 259.08 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 259.08 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 259.08 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 259.08 152.4 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17998,6 +22668,61 @@
 				)
 			)
 		)
+		(property "Manufacturer Part" ""
+			(at 78.105 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 78.105 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 78.105 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_DVDD" ""
+			(at 78.105 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.2_VREG_LX" ""
+			(at 78.105 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f74e2009-4c52-45b8-8fb6-58f4abf3a533")
 		)
@@ -18015,7 +22740,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 259.08 132.08 180)
+		(at 259.08 137.16 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18025,7 +22750,7 @@
 		(dnp no)
 		(uuid "ff235ae0-e2fe-4b7e-aa2e-0679475e8912")
 		(property "Reference" "#PWR030"
-			(at 259.08 125.73 0)
+			(at 259.08 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18036,7 +22761,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 259.08 127.762 0)
+			(at 259.08 132.842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18046,7 +22771,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 132.08 0)
+			(at 259.08 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18057,7 +22782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 132.08 0)
+			(at 259.08 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18068,7 +22793,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 259.08 132.08 0)
+			(at 259.08 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
