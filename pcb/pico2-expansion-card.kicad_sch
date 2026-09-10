@@ -5627,7 +5627,7 @@
 	)
 	(no_connect
 		(at 168.91 120.65)
-		(uuid "df851526-4285-4455-85b7-a523343ddb6b")
+		(uuid "de559ace-d17f-4406-ba99-d7db70cec030")
 	)
 	(no_connect
 		(at 212.09 52.07)
@@ -9013,6 +9013,16 @@
 		)
 		(uuid "0c8dd809-6f00-4662-9732-7f2456a7f4af")
 	)
+	(label "GPIO26"
+		(at 217.17 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0efdada8-b348-4490-90d6-2c6900065c7f")
+	)
 	(label "GPIO4"
 		(at 168.91 67.31 180)
 		(effects
@@ -9182,16 +9192,6 @@
 			(justify right bottom)
 		)
 		(uuid "45e47641-9fcc-4927-9bd5-ac1f491bf09f")
-	)
-	(label "GPIO27"
-		(at 217.17 160.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "463e3b76-e1d4-4306-afa8-392b722721e3")
 	)
 	(label "SWDIO"
 		(at 88.9 130.81 0)
@@ -9473,16 +9473,6 @@
 		)
 		(uuid "ba063644-195d-4ad1-90b3-6c1901d5521d")
 	)
-	(label "GPIO26"
-		(at 185.42 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c17126e8-22cd-42f2-b929-1365d15c1596")
-	)
 	(label "USB_D-"
 		(at 223.52 46.99 180)
 		(effects
@@ -9552,6 +9542,16 @@
 			(justify left bottom)
 		)
 		(uuid "d91c03d2-a0c6-4e35-9d28-83d17d7b4f7d")
+	)
+	(label "GPIO27"
+		(at 185.42 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dc8a3d86-5fc6-4ee4-9b6f-2db34e86f752")
 	)
 	(label "GPIO5"
 		(at 168.91 69.85 180)
