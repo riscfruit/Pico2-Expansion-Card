@@ -11640,7 +11640,7 @@
 				(xyz 0 0.184 0)
 			)
 			(scale
-				(xyz 0.8 0.8 0.8)
+				(xyz 0.7 1.1 0.6)
 			)
 			(rotate
 				(xyz -0 -0 -180)
@@ -14871,15 +14871,15 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3D/Korean Hroparts Elec TYPE-C-31-G-10.stp"
+		(model "${KIPRJMOD}/3D/TYPE-C-31-G-10.step"
 			(offset
-				(xyz 0 3.1 0)
+				(xyz 0 -10.8 -0.15)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz -0 -0 -180)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
