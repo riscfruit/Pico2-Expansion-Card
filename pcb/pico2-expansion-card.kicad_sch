@@ -9,7 +9,7 @@
 		(date "2026-09-08")
 		(rev "0.4.0p")
 		(company "Riscfruit Laboratory")
-		(comment 1 "License: CERN-OHL-S")
+		(comment 1 "License: CERN-OHL-S v2")
 		(comment 2 "Author: Tan Siret Akıncı")
 	)
 	(lib_symbols
