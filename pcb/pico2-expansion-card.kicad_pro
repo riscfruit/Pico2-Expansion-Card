@@ -543,7 +543,7 @@
       "netlist": "",
       "plot": "gerber/",
       "specctra_dsn": "",
-      "vrml": ""
+      "vrml": "../../../pico2-expansion-card.wrl"
     },
     "page_layout_descr_file": ""
   },
