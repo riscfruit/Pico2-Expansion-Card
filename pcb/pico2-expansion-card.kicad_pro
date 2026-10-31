@@ -1,6 +1,26 @@
 {
   "board": {
-    "3dviewports": [],
+    "3dviewports": [
+      {
+        "name": "expansioncardfront",
+        "ww": 1.0,
+        "wx": 52.90287780761719,
+        "wy": -0.7498581409454346,
+        "wz": -22.558467864990234,
+        "xw": 0.0,
+        "xx": -0.8378871083259583,
+        "xy": -0.44719070196151733,
+        "xz": 0.31299474835395813,
+        "yw": 0.0,
+        "yx": 0.5439167618751526,
+        "yy": -0.7321661114692688,
+        "yz": 0.4099845588207245,
+        "zw": 0.0,
+        "zx": 0.045822858810424805,
+        "zy": 0.5137639045715332,
+        "zz": 0.8567070364952087
+      }
+    ],
     "design_settings": {
       "defaults": {
         "apply_defaults_to_fp_barcodes": false,
@@ -146,7 +166,7 @@
         "min_track_width": 0.127,
         "min_via_annular_width": 0.09,
         "min_via_diameter": 0.48,
-        "solder_mask_to_copper_clearance": 0.1,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
